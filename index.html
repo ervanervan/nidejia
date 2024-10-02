@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-black font-['Poppins']">
+  <body class="bg-black font-['Poppins'] relative z-10 top-0">
     <div
       class="bg-[url('/assets/modern-architecture-shapes-futuristic-city.png')] w-full h-screen bg-cover relative top-0 -z-20"
     >
@@ -23,7 +23,7 @@
         viewBox="0 0 1280 768"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="absolute top-0 w-full h-screen -z-10"
+        class="absolute top-0 left-0 w-full h-screen -z-10"
       >
         <rect
           x="-49"
@@ -98,12 +98,38 @@
             Sign In
           </button>
           <button
-            class="bg-[#FF9357] px-6 py-3 rounded-full text-base font-semibold text-[#141414]"
+            class="bg-[#FF9357] hover:bg-orange-500 px-6 py-3 rounded-full text-base font-semibold text-[#141414]"
           >
             Sign Up
           </button>
         </div>
       </nav>
+
+      <div
+        class="flex flex-col gap-y-[50px] w-full max-w-6xl mx-auto mt-[100px]"
+      >
+        <div class="w-full md:w-1/2 text-white">
+          <h1 class="font-bold text-5xl leading-snug mb-3">
+            Find Glorious Living And Loving Space
+          </h1>
+          <p class="text-lg w-full md:w-3/4">
+            Dolor house comfortable si amet with cheap price that also lorem
+            when you need grow.
+          </p>
+        </div>
+        <div class="flex items-center rounded-full bg-black w-fit">
+          <input
+            type="text"
+            placeholder="Search by city or country..."
+            class="py-3 px-4 text-white bg-black placeholder-gray-400 focus:outline-none w-64 md:w-96 rounded-l-full"
+          />
+          <button
+            class="bg-[#FF9357] text-base font-semibold text-[#141414] py-3 px-6 rounded-r-full hover:bg-orange-500"
+          >
+            Explore
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
